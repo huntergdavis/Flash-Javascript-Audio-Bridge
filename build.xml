@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<project name="dar" default="build" basedir=".">
+	<target name="build">
+		<exec dir="." failonerror="true" executable="/Developer/flex_sdk/bin/mxmlc">
+			<arg line="FFTBridge.as" />
+		</exec>
+	</target>
+</project>

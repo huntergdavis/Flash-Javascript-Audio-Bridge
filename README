@@ -1,0 +1,29 @@
+This is a basic flash to javascript audio in bridge.
+
+Why do we need such a basic library, which is really little more than an SDK example?
+
+I searched high and low out there, and found many examples on how to do flash to javascript audio in bridging, however not a single one of these examples provided a pre-compiled example for testing 
+
+What about those of us who create and modify FFT algorithms for a living?  Why do we need to become experts in flash because the web consortium can't decide on an audio specification?
+
+This is for those of us who don't want to set up a flash compiler and build system just to work with microphone data.
+We all know that web audio in is coming soon, this library is just a crutch for the next few years while we settle out the spec.
+
+For those of us who do want to edit the actionscript, mess with variables, write more functions etc, the source is there for that too.
+
+The content is provided with a BSD license, see the included license.tx†
+
+
+Contents-
+LICENSE.txt - BSD licence (so use this where you like)
+Build.xml - A very simple build file for those who wish to compile this
+FFTBridge.as - the actionscript source code which creates an audio-in bridge
+FFTBridge.swf - the compiled above file
+
+FFTBridge calls a javascript function you must provide, currently named stageOneFFT
+FFTBridge supports callback from java --
+FFTBridge() - function to start the mic recording and set the mic rate and silence level
+
+
+hunter@hunterdavis.com
+hunter@misomedia.com
